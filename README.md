@@ -1,4 +1,5 @@
 Siddhesh React Music Player
+
 This project is a responsive music player built with React. It fetches song data from an API and allows users to play songs, adjust volume, and navigate through tracks. The interface includes playback controls, a progress bar, and a search feature.
 
 
