@@ -1,0 +1,363 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: black;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  /* position: relative; */
+  left: 124px;
+}
+
+/* Updated Spotify logo and hamburger button styles */
+.spotify-logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1100;
+}
+
+.logo-image {
+  width: 58px;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: 1rem;
+  z-index: 1100;
+}
+
+.hamburger:hover {
+  transform: translateY(-3px);
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 30%;
+  min-width: 250px;
+  transition: transform 0.3s ease;
+  z-index: 1000;
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  height: calc(100% - 0px);
+  background-color: #000;
+  overflow: hidden;
+}
+
+.sidebar-open {
+  transform: translateX(0%);
+}
+
+.sidebar .left {
+  padding: 12px 25px 20px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 74px;
+}
+
+.sidebar .tabs {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  color: #999;
+}
+
+.sidebar .tabs h2 {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sidebar .tabs h2.active {
+  color: white;
+}
+
+.sidebar .search-bar {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #444;
+  border: none;
+  border-radius: 15px;
+  color: white;
+}
+
+/* Scrollable song list */
+.sidebar .song-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: hidden;
+}
+
+.sidebar .song-item {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.sidebar .song-item:hover {
+  background-color: #555;
+}
+
+.sidebar .song-item.active {
+  background-color: #666;
+  border-radius: 20px;
+}
+
+.sidebar .song-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-right: 0.5rem;
+  border-radius: 50px;
+}
+
+.sidebar .song-info {
+  flex: 1;
+  color: white;
+}
+
+.sidebar .song-duration {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Player styles */
+.player {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  position: fixed;
+  left: 30%;
+  top: 50px;
+  bottom: 0;
+  padding: 20px;
+  /* background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)); */
+  background-size: cover;
+  background-position: center;
+  transition: background 0.3s ease;
+}
+
+.player-open {
+  opacity: 1;
+}
+
+.player .song-title {
+  margin: 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+.player .artist-name {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #999;
+}
+
+.player .album-art img {
+  width: 350px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.player .progress-bar-container {
+  width: 50%;
+}
+
+.player .progress-bar {
+  width: 100%;
+  height: 4px;
+  appearance: none;
+  background-color: #555;
+  outline: none;
+  cursor: pointer;
+}
+
+.player .progress-bar::-webkit-slider-thumb {
+  appearance: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.player .controls {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 31px;
+}
+
+.player .control-button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.player .control-button:hover {
+  transform: translateY(-3px);
+}
+
+.player .play-button {
+  margin: 0 1rem;
+}
+
+.player .volume-button {
+  margin-left: auto;
+}
+
+.hamburger {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  z-index: 1100;
+}
+
+.hamburger:hover {
+  transform: translateY(-3px);
+}
+
+/* Login Icon */
+.login-icon {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #1db954;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1200;
+}
+
+.login-icon img {
+  width: 70%;
+  height: 70%;
+}
+
+/* Small circle styles */
+.small-circle {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: #1db954;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+}
+
+.small-circle img {
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+}
+
+@media (max-width: 1200px) {
+  .player {
+    left: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sidebar {
+    width: 100%;
+    left: 100%;
+    transform: translateX(0%);
+    transition: all 0.3s ease;
+    z-index: 1000;
+  }
+
+  .player {
+    left: 60px;
+    width: 100%;
+  }
+
+  .sidebar-open {
+    left: 0;
+  }
+
+  .sidebar .left {
+    padding: 20px;
+  }
+
+  .player .album-art img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 576px) {
+  .player .album-art img {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+/* Position the login circle */
+
+
+.login-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.login-icon img {
+  width: 70%;
+  height: 70%;
+}
+
+.user-image {
+  border-radius: 50%;
+}
