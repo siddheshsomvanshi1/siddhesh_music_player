@@ -3,7 +3,8 @@ Siddhesh React Music Player
 This project is a responsive music player built with React. It fetches song data from an API and allows users to play songs, adjust volume, and navigate through tracks. The interface includes playback controls, a progress bar, and a search feature.
 
 
-Features
+Features:
+
 1.Play, pause, skip forward, and skip backward controls.
 2.Adjustable volume and mute functionality.
 3.Search for songs by title or artist.
@@ -12,20 +13,24 @@ Features
 6.Active highlighting of the currently playing song.
 7.Menu for selecting songs directly.
 
-Technologies Used
+Technologies Used:
+
 1.React
 2.Axios for HTTP requests
 3.Font Awesome for icons
 4.CSS for styling
 
-Getting Started
+Getting Started:
+
 1.To get a local copy up and running, follow these steps.
 
-Prerequisites
+Prerequisites:
+
 1.Node.js
 2.npm or yarn
 
-Installation
+Installation:
+
 1.Clone the repo:
 2.Copy code
 git clone https://github.com/yourusername/your-repo.git
@@ -43,17 +48,20 @@ Start the development server:
 # or
 yarn start
 
-Usage
+Usage:
+
 1.Click on a song from the sidebar to play it.
 2.Use the playback controls to pause, play, skip forward, and skip backward.
 3.Adjust the volume using the volume slider or toggle mute.
 
-API Reference
+API Reference:
+
 1.This project uses the following API endpoint to fetch song data:
 2.GET https://cms.samespace.com/items/songs
 3.Retrieves a list of songs with details like name, artist, url, cover, and accent.
 
-Contributing
+Contributing:
+
 1.Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
 2.Fork the project.
 3.Create your feature branch (git checkout -b feature/AmazingFeature).
@@ -61,5 +69,6 @@ Contributing
 5.Push to the branch (git push origin feature/AmazingFeature).
 6.Open a pull request.
 
-Contact
+Contact:
+
 Siddhesh Somvanshi -  siddheshsomvanshi1@gmail.com
