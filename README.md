@@ -1,70 +1,64 @@
-# Getting Started with Create React App
+Siddhesh React Music Player
+This project is a responsive music player built with React. It fetches song data from an API and allows users to play songs, adjust volume, and navigate through tracks. The interface includes playback controls, a progress bar, and a search feature.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Features
+1.Play, pause, skip forward, and skip backward controls.
+2.Adjustable volume and mute functionality.
+3.Search for songs by title or artist.
+4.Choose songs from 'For You' or 'Top Tracks' tabs.
+5.Responsive design with a sidebar for navigation.
+6.Active highlighting of the currently playing song.
+7.Menu for selecting songs directly.
 
-In the project directory, you can run:
+Technologies Used
+1.React
+2.Axios for HTTP requests
+3.Font Awesome for icons
+4.CSS for styling
 
-### `npm start`
+Getting Started
+1.To get a local copy up and running, follow these steps.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Prerequisites
+1.Node.js
+2.npm or yarn
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Installation
+1.Clone the repo:
+2.Copy code
+git clone https://github.com/yourusername/your-repo.git
+cd your-repo
 
-### `npm test`
+Install dependencies:
+1.Copy code
+2.npm install
+# or
+yarn install
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Start the development server:
+1.Copy code
+2.npm start
+# or
+yarn start
 
-### `npm run build`
+Usage
+1.Click on a song from the sidebar to play it.
+2.Use the playback controls to pause, play, skip forward, and skip backward.
+3.Adjust the volume using the volume slider or toggle mute.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+API Reference
+1.This project uses the following API endpoint to fetch song data:
+2.GET https://cms.samespace.com/items/songs
+3.Retrieves a list of songs with details like name, artist, url, cover, and accent.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Contributing
+1.Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+2.Fork the project.
+3.Create your feature branch (git checkout -b feature/AmazingFeature).
+4.Commit your changes (git commit -m 'Add some AmazingFeature').
+5.Push to the branch (git push origin feature/AmazingFeature).
+6.Open a pull request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contact
+Siddhesh Somvanshi -  siddheshsomvanshi1@gmail.com
